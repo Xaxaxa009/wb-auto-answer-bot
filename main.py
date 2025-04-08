@@ -4,11 +4,11 @@ import requests
 import time
 import schedule
 from datetime import datetime
-from openai import OpenAI
+from config import OPENAI_API_KEY
+
 
 # === НАСТРОЙКИ ===
 WB_API_TOKEN = "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwMjE3djEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc1OTg2MTcwNCwiaWQiOiIwMTk2MTQxNS1mMGRmLTczNjAtYTljNS04MDhhYzIzZGVhMTciLCJpaWQiOjUyMzMzMTczLCJvaWQiOjEzMTM1MSwicyI6MTI4LCJzaWQiOiJkZWIyM2I2Yy1lZDhmLTQwMDUtODNiZS1mYzg0MGU0ZTZkNjYiLCJ0IjpmYWxzZSwidWlkIjo1MjMzMzE3M30.kr0tPwZ0VbhHqU8G-NqrWdpN4CJmkMJFSd5PrUgMenDo1ERMXoJFpoKPRcDaOnfcfrwZgi2bDQk8ObtwBWmg6w"
-OPENAI_API_KEY = "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"
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 

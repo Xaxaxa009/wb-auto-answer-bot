@@ -2,10 +2,10 @@
 
 import requests
 import time
-import schedule
 from datetime import datetime
-from config import OPENAI_API_KEY
-
+from config import WB_API_TOKEN, OPENAI_API_KEY
+from openai import OpenAI
+import schedule
 
 # === НАСТРОЙКИ ===
 WB_API_TOKEN = "eyJhbGciOiJFUzI1NiIsImtpZCI6IjIwMjUwMjE3djEiLCJ0eXAiOiJKV1QifQ.eyJlbnQiOjEsImV4cCI6MTc1OTg2MTcwNCwiaWQiOiIwMTk2MTQxNS1mMGRmLTczNjAtYTljNS04MDhhYzIzZGVhMTciLCJpaWQiOjUyMzMzMTczLCJvaWQiOjEzMTM1MSwicyI6MTI4LCJzaWQiOiJkZWIyM2I2Yy1lZDhmLTQwMDUtODNiZS1mYzg0MGU0ZTZkNjYiLCJ0IjpmYWxzZSwidWlkIjo1MjMzMzE3M30.kr0tPwZ0VbhHqU8G-NqrWdpN4CJmkMJFSd5PrUgMenDo1ERMXoJFpoKPRcDaOnfcfrwZgi2bDQk8ObtwBWmg6w"
